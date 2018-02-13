@@ -13,6 +13,5 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
       - ./site.conf:/etc/nginx/conf.d/default.conf
       - ./ssl:/etc/nginx/ssl/
