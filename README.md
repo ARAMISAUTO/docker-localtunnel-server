@@ -1,6 +1,6 @@
 # localtunnel-server-nginx
 
-Docker Compose setup for running a Localtunnel server behind a SSL Nginx reverse proxy.
+Docker Compose setup for running a Localtunnel server behind a SSL Nginx reverse proxy. It uses the [localtunnel-server](https://github.com/localtunnel/server) and [localtunnel-nginx](https://github.com/localtunnel/nginx) Docker images.
 
 ## Usage
 
