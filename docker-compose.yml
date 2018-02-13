@@ -2,7 +2,7 @@ version: '3'
 
 services:
   localtunnel_server:
-    build: https://github.com/localtunnel/server.git#2a9bc271179c7269f01fb5e133bf4e4b0e2ce8a9
+    build: https://github.com/localtunnel/server.git
     command: --port 3000
 
   nginx:
