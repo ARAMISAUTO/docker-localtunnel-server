@@ -4,14 +4,12 @@ services:
   localtunnel_server:
     build: https://github.com/localtunnel/server.git
     command: --port 3000
+    network_mode: host
 
   nginx:
     depends_on:
       - localtunnel_server
     image: defunctzombie/localtunnel-nginx:latest
-    ports:
-      - "80:80"
-      - "443:443"
+    network_mode: host
     volumes:
-      - ./site.conf:/etc/nginx/conf.d/default.conf
       - ./ssl:/etc/nginx/ssl/
